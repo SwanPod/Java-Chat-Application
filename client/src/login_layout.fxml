@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #7DCFDA;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Chat">
+   <children>
+      <Pane layoutX="50.0" layoutY="42.0" prefHeight="317.0" prefWidth="501.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#393939" />
+         </effect>
+         <children>
+            <JFXTextField fx:id="ip" focusColor="#25a2ce" layoutX="55.0" layoutY="77.0" maxWidth="397.0" minWidth="263.0" prefHeight="31.0" prefWidth="397.0" promptText="Server IP" />
+            <JFXTextField fx:id="username" focusColor="#25a2ce" layoutX="52.0" layoutY="128.0" maxWidth="397.0" minWidth="270.0" prefHeight="31.0" prefWidth="397.0" promptText="Username" />
+            <JFXButton fx:id="loginButton" buttonType="RAISED" layoutX="228.0" layoutY="254.0" onAction="#connect" ripplerFill="WHITE" style="-fx-background-color: #25a2ce;" text="Connect" textFill="WHITE" />
+            <JFXPasswordField fx:id="pass" focusColor="#25a2ce" layoutX="52.0" layoutY="177.0" maxWidth="427.0" minWidth="397.0" prefHeight="31.0" prefWidth="397.0" promptText="Password" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
