@@ -5,6 +5,7 @@ import time
 
 connections = set()
 
+#Change to your server's IP address and correct port (Don't use port 80, that is for web pages)
 ip =  '127.0.0.1'
 port = 80
 
